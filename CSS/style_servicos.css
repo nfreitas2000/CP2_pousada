@@ -1,13 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap');
-
-.cal-sans-regular {
-    font-family: "Cal Sans", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-  
 *{
-    font-family: "Cal Sans", sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -55,7 +46,7 @@ nav ul{
 nav ul li a{
     text-decoration: none;
     color: #444;
-    display: flex;
+    display: inline-block;
     padding: 10px 20px;
 }
 
@@ -69,65 +60,10 @@ nav ul li a:hover{
 main{
     flex-grow: 1;
     display: flex;
-    flex-direction: column;
 }
 
-main section {
-    padding: 20px;
-}
-
-main section header{
-    background-color: transparent;
-    display: flex;
-    justify-content: center;
-}
-
-main section article{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding-bottom: 20px;
-}
-
-.secao1{
-    background-color: rgba(179, 211, 247, 0);
-}
-.secao1 figure img{
-    border: orangered 5px solid;
-    flex-basis: 1;
-    border-radius: 15px;
-    margin: 5px;
-    width: 49%;
-}
-
-.secao2{
-    background-color: rgb(176, 176, 255);
-}
-
-.secao3 ul li{
-    display: flex;
-    list-style: none;
-    justify-content: center;
-    padding: 5px;
-}
-
-.secao4{
-    background-color: rgb(176, 176, 255);
-}
-
-main iframe{
-    display: flex;
-    flex-grow: 1;
-    justify-content: center;
-    border: px black solid;
-    margin: 20px;
-    width: 97%;
-    border-radius: 50px;
-    background-color: orangered;
-}
 /****************************** FOOTER **************************************/
 footer{
-    color: white;
     background-color: rgb(10, 9, 22);
     min-height: 50px;
     display: flex;
