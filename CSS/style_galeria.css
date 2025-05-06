@@ -61,7 +61,35 @@ nav ul li a:hover{
 /****************************** MAIN **************************************/
 main{
     flex-grow: 1;
+}
+
+main h2{
     display: flex;
+    justify-content: center;
+    padding: 15px;
+    flex-direction: row;
+}
+
+main section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+section figure{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section figure img{
+    border: black solid 2px;
+    border-radius: 15px;
+    width: 300px;
+    height: 200px;
+    flex-wrap: wrap;
+    margin-bottom: 45px;
+    margin: 15px;
 }
 
 /****************************** FOOTER **************************************/
