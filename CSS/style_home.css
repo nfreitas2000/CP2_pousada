@@ -45,11 +45,13 @@ nav{
     background-color: rgb(235, 212, 172);
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 nav ul{
     display: flex;
     list-style: none;
+    flex-wrap: wrap;
 }
 
 nav ul li a{
@@ -72,10 +74,6 @@ main{
     flex-direction: column;
 }
 
-main section {
-    padding: 20px;
-}
-
 main section header{
     background-color: transparent;
     display: flex;
@@ -92,16 +90,39 @@ main section article{
 .secao1{
     background-color: rgba(179, 211, 247, 0);
 }
+
+.secao1 figure{
+    display: flex;
+    justify-content: center;
+}
+
 .secao1 figure img{
-    border: orangered 5px solid;
+    border: black 2px solid;
     flex-basis: 1;
     border-radius: 15px;
     margin: 5px;
     width: 49%;
+    flex-grow: 1;
+    flex-wrap: wrap;
 }
 
 .secao2{
-    background-color: rgb(176, 176, 255);
+    background-color: lightgoldenrodyellow;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.secao2 p h2{
+    flex-grow: 1;
+}
+
+.secao2 figure img{
+    width: 400px;
+    height: auto;
+    border: black 2px solid;
+    border-radius: 25px;
+    margin: 15px;
 }
 
 .secao3 ul li{
@@ -112,7 +133,7 @@ main section article{
 }
 
 .secao4{
-    background-color: rgb(176, 176, 255);
+    background-color: lightgoldenrodyellow;
 }
 
 main iframe{
