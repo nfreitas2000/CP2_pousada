@@ -74,6 +74,10 @@ main{
     flex-direction: column;
 }
 
+main section p{
+    margin: 0px 150px 0 150px;
+}
+
 main section header{
     background-color: transparent;
     display: flex;

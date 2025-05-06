@@ -36,13 +36,11 @@ nav{
     background-color: rgb(235, 212, 172);
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
 }
 
 nav ul{
     display: flex;
     list-style: none;
-    flex-wrap: wrap;
 }
 
 nav ul li a{
@@ -62,65 +60,51 @@ nav ul li a:hover{
 main{
     flex-grow: 1;
     display: flex;
+    flex-direction: column;
+}
+
+main section p{
+    margin: 0px 150px 0 150px;
+}
+
+main section header{
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+}
+
+main section article{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.secao1{
+    background-color: rgba(179, 211, 247, 0);
+}
+
+.secao2{
+    background-color: lightgoldenrodyellow;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.secao2 p h2{
     flex-grow: 1;
 }
 
-
-section header{
-    justify-content: center;
-}
-
-section figure{
+.secao3 ul li{
     display: flex;
-    align-items: center;
+    list-style: none;
     justify-content: center;
-}
-section figure img{
-    border: black solid 2px;
-    border-radius: 15px;
-    width: 300px;
-    height: 200px;
-    flex-wrap: wrap;
-    margin-bottom: 15px;
+    padding: 5px;
 }
 
-section article p{
-    padding: 15px;
-    text-align: center;
-}
-
-.qfamilia header{
-    background-color: transparent;
-}
-
-section h2{
-    text-align: center;
-}
-
-.qfamilia{
+.secao4{
     background-color: lightgoldenrodyellow;
 }
-
-section a{
-    display: flex;
-    margin-top: 20px;
-    margin-left: 43%;
-}
-
-.botao{
-    display: flex;
-    padding: 10px;
-    width: 100px;
-    color: white;
-    background-color: green;
-    border: #444 solid 2px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-.botao:hover{
-    background-color: rgb(3, 175, 3);
-}
-
 
 /****************************** FOOTER **************************************/
 footer{
