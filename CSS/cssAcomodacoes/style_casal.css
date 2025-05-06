@@ -36,30 +36,90 @@ nav{
     background-color: rgb(235, 212, 172);
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 nav ul{
     display: flex;
     list-style: none;
+    flex-wrap: wrap;
 }
 
 nav ul li a{
     text-decoration: none;
     color: #444;
-    display: inline-block;
+    display: flex;
     padding: 10px 20px;
 }
 
 nav ul li a:hover{
     color: lightgray;
     background-color: #6a3812;
-
 }
+
 
 /****************************** MAIN **************************************/
 main{
     flex-grow: 1;
     display: flex;
+    flex-direction: column;
+}
+
+main section p{
+    margin: 0px 150px 0 150px;
+}
+
+main section header{
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+}
+
+main section article{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.secao1{
+    background-color: rgba(179, 211, 247, 0);
+}
+
+.secao2{
+    background-color: lightgoldenrodyellow;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.secao2 p h2{
+    flex-grow: 1;
+}
+
+.secao3 ul li{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    padding: 5px;
+}
+
+.secao4{
+    background-color: lightgoldenrodyellow;
+}
+
+section figure{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+section figure img{
+    border: black solid 2px;
+    border-radius: 15px;
+    width: 300px;
+    height: 200px;
+    flex-wrap: wrap;
+    margin-bottom: 45px;
 }
 
 /****************************** FOOTER **************************************/

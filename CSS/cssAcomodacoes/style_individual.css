@@ -143,6 +143,21 @@ main section article{
     background-color: lightgoldenrodyellow;
 }
 
+section figure{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+section figure img{
+    border: black solid 2px;
+    border-radius: 15px;
+    width: 300px;
+    height: 200px;
+    flex-wrap: wrap;
+    margin-bottom: 45px;
+}
+
+
 /****************************** FOOTER **************************************/
 footer{
     background-color: rgb(10, 9, 22);
