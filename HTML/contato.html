@@ -25,11 +25,69 @@
     </nav>
 
     <main>
-        <h1>Contato</h1>
+        <section>
+            <header>
+                <h1>Entre em contato conosco</h1>
+            </header>
+            <article>
+                <p>Basta inserir seus dados e receberá um email nosso!</p>
+            </article>
+        </section>
+        <form name="contato" action="enviar.html" method="get">
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <div class="campo">
+                    <label for="cnome">Nome:</label>
+                    <input type="text" id="cnome" name="contato">
+                </div>
+                <div class="campo">
+                    <label for="cemail">E-mail:</label>
+                    <input type="email" id="cemail" name="contato">
+                </div>
+                <div class="campo">
+                    <label for="ctelefone">Telefone:</label>
+                    <input type="number" name="contato" id="ctelefone">
+                </div>
+                <div class="campo">
+                    <label for="ccidade">Cidade:</label>
+                    <input type="text" name="contato" id="ccidade">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    Motivo do contato
+                </legend>
+                <div class="radio">
+                    <input type="radio" name="contato" id="reserva" value="reserva">
+                    <label for="reserva">Reserva</label>
+                <div class="radio">
+                    <input type="radio" name="contato" id="duvida" value="duvida">
+                    <label for="duvida">Dúvidas sobre acomodações</label>
+                </div>
+                <div class="radio">
+                    <input type="radio" name="contato" id="orcamento" value="orcamento">
+                    <label for="orcamento">Solicitação de orçamento</label>
+                </div>
+                <div class="radio">
+                    <input type="radio" name="contato" id="reclamacao" value="reclamacao">
+                    <label for="reclamacao">Reclamação</label>
+                </div>
+                <div class="radio">
+                    <input type="radio" name="contato" id="sugestao" value="sugestao">
+                    <label for="sugestao">Sugestão</label>
+                </div>
+                <div class="radio">
+                    <input type="radio" name="contato" id="outros" value="outros">
+                    <label for="outros">Outros</label>
+                </div>
+            </fieldset>
+            <div class="botaoEnviar"><input type="submit" value="Enviar"></div>
 
+        </form>
+    
     </main>
     <footer>
-
+        <p>Av. Vieira Souto, 365 - Ipanema - Rio de Janeiro - RJ</p>
     </footer>
 
 </body>

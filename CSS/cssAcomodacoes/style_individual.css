@@ -124,6 +124,7 @@ section figure img{
 
 /****************************** FOOTER **************************************/
 footer{
+    color: white;
     background-color: rgb(10, 9, 22);
     min-height: 50px;
     display: flex;

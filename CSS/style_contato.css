@@ -59,12 +59,57 @@ nav ul li a:hover{
 
 /****************************** MAIN **************************************/
 main{
+    display: flex;
     flex-grow: 1;
+    flex-direction: column;
+    text-align: center;
+    align-content: center;
+}
+
+main section header{
+    justify-content: center;
+}
+
+section article p{
+    text-align: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0;
+    justify-content: center;
+    margin: 15px 30% 30% 30%;
+}
+
+.campo{
     display: flex;
 }
 
+.campo label{
+    display: inline-block;
+    width: 80px;
+}
+
+.campo input{
+    flex-grow: 1;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.radio{
+    margin: 15px;
+}
+
+.botaoEnviar{
+    display: flex;
+    flex-direction: column;
+}
+
+
 /****************************** FOOTER **************************************/
 footer{
+    color: white;
     background-color: rgb(10, 9, 22);
     min-height: 50px;
     display: flex;
